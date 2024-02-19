@@ -1,8 +1,15 @@
 <?php
-global $conn;
 include 'Connection.php';
-    $conn->query("TRUNCATE TABLE genaralskills;");
-    $conn->query("TRUNCATE TABLE specialskills");
+class Truncate extends Connection
+{
+    function delete()
+    {
+        $this->conn->query("TRUNCATE TABLE genaralskills;");
+        $this->conn->query("TRUNCATE TABLE specialskills");
 
-header("Location: ../index.php");
+    }
+
+}
+$object = new Truncate();
+$object->delete();
 
