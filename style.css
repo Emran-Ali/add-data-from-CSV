@@ -1,0 +1,15 @@
+.div{
+    display: flex;
+    border: 3px solid rosybrown;
+    margin: 50px;
+    padding: 50px;
+    justify-content: space-around;
+    align-content: center;
+}
+.btn{
+    height: 2rem;
+    background-color: darkslategrey;
+    width: auto;
+    border: 1px solid blue;
+    color: aliceblue;
+}

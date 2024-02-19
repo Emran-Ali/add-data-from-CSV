@@ -1,0 +1,18 @@
+{
+    "name": "tech/cs-vto-db",
+    "autoload": {
+        "psr-4": {
+            "Tech\\CsVtoDb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emran"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "add": "php Action\\Action.php",
+        "del": "php Action\\Truncate.php"
+    }
+}
